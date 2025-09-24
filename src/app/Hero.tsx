@@ -19,7 +19,7 @@ const Hero = () => {
             href="#"
             className="gap-2 inline-flex justify-center items-center py-3 px-4 sm:px-5 text-base font-medium text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
           >
-            Let's Build Together
+            Let&apos;s Build Together
             <ArrowRightIcon className="w-5 h-5" />
           </a>
 

@@ -41,7 +41,7 @@ const ProjectForm: React.FC = () => {
         >
           <div className="p-5 grid justify-center gap-4 text-center mb-10">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-200">
-          Let's Talk Business
+          Let&apos;s Talk Business
         </h1>
         <p className="text-base sm:text-lg text-gray-200">
           Ready to transform your ideas into reality? Get in touch with our team today.

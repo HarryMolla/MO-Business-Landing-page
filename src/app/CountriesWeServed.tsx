@@ -55,7 +55,7 @@ const CountriesWeServed = () => {
           🌍 countries we served
         </h1>
         <p className="text-center text-lg font-noramal text-gray-200">
-          We've delivered digital solutions across 7 countries{" "}
+          We&apos;ve delivered digital solutions across 7 countries
         </p>
       </div>
       <div

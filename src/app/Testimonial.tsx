@@ -78,7 +78,7 @@ const InfiniteColumns: React.FC = () => {
 
             <p className="text-gray-300 mt-4 flex-1 text-sm sm:text-base">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been standard dummy text
               ever since the 1500s.
             </p>
 
