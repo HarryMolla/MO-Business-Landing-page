@@ -82,15 +82,15 @@ const IndustriesWeServed = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="grid gap-4 border border-gray-400/10 rounded-2xl p-6 justify-items-center"
+            className="grid gap-2 border border-gray-400/10 rounded-2xl p-6 justify-items-center"
           >
             <div className="p-4 bg-gradient-to-br from-emerald-400/10 to-emerald-600/10 w-fit h-fit rounded-2xl">
               {item.icon}
             </div>
-            <h1 className="text-2xl font-bold text-white text-center">
+            <h1 className="text-lg font-bold text-white text-center">
               {item.title}
             </h1>
-            <p className="text-lg font-normal text-gray-300 text-center">
+            <p className="text-normal font-normal text-gray-300 text-center">
               {item.description}
             </p>
           </div>
