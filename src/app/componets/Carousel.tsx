@@ -1,12 +1,17 @@
 'use client';
 
+import Slide1 from '../assets/slide1.png'
+import Slide2 from '../assets/slide2.png'
+import Slide3 from '../assets/slide3.png'
+import Slide4 from '../assets/slide4.png'
 import { useState, useEffect } from "react";
 
 const slides = [
-  { id: 1, content: "Slide 1 Content", color: "bg-red-400" },
-  { id: 2, content: "Slide 2 Content", color: "bg-green-400" },
-  { id: 3, content: "Slide 3 Content", color: "bg-blue-400" },
-  { id: 4, content: "Slide 4 Content", color: "bg-yellow-400" },
+  { id: 1, content: "Slide 1 Content", img: Slide1 },
+  { id: 2, content: "Slide 1 Content", img: Slide2 },
+  { id: 3, content: "Slide 1 Content", img: Slide3 },
+  { id: 4, content: "Slide 1 Content", img: Slide4 },
+  
 ];
 
 const Carousel = () => {
@@ -30,13 +35,21 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full max-w-xl mx-auto overflow-hidden rounded-lg shadow-lg h-auto">
+    <div className="relative w-full max-w-xl mx-auto overflow-hidden rounded-lg shadow-lg h-fit">
       <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${current * 100}%)` }}>
         {slides.map((slide) => (
-          <div key={slide.id} className={`flex-shrink-0 w-full h-90 flex items-center justify-center text-white text-2xl font-bold ${slide.color}`}>
-            {slide.content}
-          </div>
-        ))}
+  <div 
+    key={slide.id} 
+    className={`flex-shrink-0 w-full h-90 flex items-center justify-center text-white text-2xl font-bold`}
+  >
+    {slide.img ? (
+      <img src={slide.img.src} alt={slide.content} className="w-full h-full object-cover" />
+    ) : (
+      slide.content
+    )}
+  </div>
+))}
+
       </div>
       {/* Dots */}
       <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">

@@ -60,12 +60,12 @@ const InfiniteLogos: React.FC = () => {
   }, []);
 
  return (
-  <div className="h-fit py-0 z-40 md:-mt-15 -mt-20"> 
-    <div className="text-center space-y-3 px-4 mb-8"> 
+  <div className="h-fit py-0 z-40 md:-mt-15 -mt-20 md:mb-0 -mb-15"> 
+    <div className="text-center space-y-6 px-4 mb-8"> 
       <h1 className="text-2xl sm:text-4xl font-bold text-gray-200">
         Trusted by businesses in Ethiopia and beyond
       </h1>
-      <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
+      <p className="text-normal sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
         Our clients trust us to deliver exceptional results
       </p>
     </div>

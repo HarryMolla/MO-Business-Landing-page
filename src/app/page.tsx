@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from './NavBar'
-import Hero from './Hero'
 import WhoWeAre from './WhoWeAre'
 import OurTeam from './OurTeam'
 import WhatWeBuild from './WhatWeBuild'
@@ -11,8 +10,8 @@ import ProjectForm from './ProjectForm'
 import Footer from './Footer'
 import Projects from './Projects'
 import ContactUs from './ContactUs'
-import GlobeSaprk from './GlobeSaprk'
 import InfiniteLogos from './InfinityLogo'
+import Hero from './Hero'
 
 
 const Page = () => {
@@ -20,9 +19,8 @@ const Page = () => {
     <div className='dark:bg-gray-900 w-full overflow-x-hidden'>
       <Navbar />
       <main className='w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <GlobeSaprk/>
+        <Hero/>
         <InfiniteLogos/>
-        <Hero />
         <WhoWeAre />
         <OurTeam />
         <WhatWeBuild />

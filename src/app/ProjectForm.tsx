@@ -40,10 +40,11 @@ const ProjectForm: React.FC = () => {
           className="max-w-4xl mx-auto bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700"
         >
           <div className="p-5 grid justify-center gap-4 text-center mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-200">
+        <h1 className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
+           bg-gradient-to-r from-gray-300 via-white to-gray-400">
           Let&apos;s Talk Business
         </h1>
-        <p className="text-base sm:text-lg text-gray-200">
+        <p className="text-normal md:text-xl sm:text-lg text-gray-300">
           Ready to transform your ideas into reality? Get in touch with our team today.
         </p>
       </div>

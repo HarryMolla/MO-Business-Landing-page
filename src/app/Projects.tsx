@@ -56,9 +56,12 @@ const Projects: React.FC = () => {
   return (
     <section className="py-12 bg-gray-900">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white">Featured Projects</h2>
-          <p className="mt-2 text-gray-400">
+        <div className="text-center mb-12 space-y-6">
+          <h1 className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
+           bg-gradient-to-r from-gray-300 via-white to-gray-400">
+            Featured Projects
+            </h1>
+          <p className="sm:text-lg md:text-xl text-gray-300">
             A showcase of our recent work and achievements
           </p>
         </div>

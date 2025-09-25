@@ -16,7 +16,10 @@ const ContactUs: React.FC = () => {
       <div className="max-w-screen-xl mx-auto grid gap-12 md:grid-cols-2">
         {/* Left Column: Contact Cards */}
         <div className="space-y-6">
-          <h2 className="text-4xl font-extrabold text-white">Get In Touch</h2>
+          <h1 className="text-2xl sm:text-4xl font-bold md:text-left text-center text-transparent bg-clip-text 
+           bg-gradient-to-r from-gray-300 via-white to-gray-400">
+            Get In Touch
+            </h1>
 
           <div className="grid gap-6">
             <div className="flex items-center gap-4 p-5 bg-gray-800/80 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
@@ -49,7 +52,10 @@ const ContactUs: React.FC = () => {
 
         {/* Right Column: Why Choose Us */}
         <div className="space-y-6">
-          <h3 className="text-3xl font-bold text-white">Why Choose Mo Tech Lab?</h3>
+          <h1 className="text-2xl sm:text-4xl font-bold md:text-left text-center text-transparent bg-clip-text 
+           bg-gradient-to-r from-gray-300 via-white to-gray-400">
+            Why Choose Mo Tech Lab?
+            </h1>
           <ul className="space-y-4">
             {features.map((feature, idx) => (
               <li

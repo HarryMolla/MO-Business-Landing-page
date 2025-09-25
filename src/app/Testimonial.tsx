@@ -124,11 +124,12 @@ const InfiniteColumns: React.FC = () => {
 
   return (
     <section className="min-h-screen px-4 sm:px-6 lg:px-8 py-10">
-      <div className="p-5 grid justify-center gap-4 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-200">
+      <div className="grid justify-center text-center space-y-6">
+        <h1 className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
+           bg-gradient-to-r from-gray-300 via-white to-gray-400">
           What Our Clients Say
         </h1>
-        <p className="text-base sm:text-lg text-gray-200">
+        <p className="text-normal md:text-xl sm:text-lg text-gray-300">
           Real feedback from real clients who trust Mo Tech Lab
         </p>
       </div>

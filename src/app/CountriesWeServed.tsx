@@ -49,12 +49,13 @@ const CountriesWeServed = () => {
   }, []);
 
   return (
-    <div className="grid justify-center overflow-hidden border border-gray-500/50 rounded-2xl m-10">
-      <div className="p-5 grid justify-center gap-4">
-        <h1 className="text-center text-4xl font-bold text-gray-200">
-          🌍 countries we served
+    <div className="grid justify-center md:my-40 my-5">
+      <div className="mb-10 grid justify-center space-y-6">
+        <h1 className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
+           bg-gradient-to-r from-gray-300 via-white to-gray-400">
+          Countries we served
         </h1>
-        <p className="text-center text-lg font-noramal text-gray-200">
+        <p className="text-center sm:text-lg md:text-xl font-noramal text-gray-300">
           We&apos;ve delivered digital solutions across 7 countries
         </p>
       </div>
@@ -64,7 +65,7 @@ const CountriesWeServed = () => {
         style={{ overflowX: "hidden", whiteSpace: "nowrap" }}
       >
         {expertsDisplay.map((expert, index) => (
-          <div className="grid " key={index}>
+          <div className="grid gap-2 " key={index}>
             <div
               key={index}
               className="flex flex-col items-center w-45 h-30 bg-gray-100/2 p-4 rounded-lg flex-shrink-0 overflow-hidden"
