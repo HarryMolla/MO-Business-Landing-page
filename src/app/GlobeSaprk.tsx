@@ -7,7 +7,7 @@ import { ArrowRightIcon, Images } from "lucide-react";
 function index() {
   return (
     <>
-      <div className="h-fit w-full md:mt-20 mt-10 overflow-x-visible">
+      <div className=" w-Screen md:mt-15 mt-10 overflow-x-visible">
         <article className="grid gap-4 text-center relative z-10 pt-10">
           {/* Hero content section */}
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
@@ -25,26 +25,26 @@ function index() {
             </p>
 
             {/* Call-to-action buttons */}
-            <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <div className="mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
               <a
                 href="#"
                 className="gap-2 inline-flex justify-center items-center py-3 px-4 sm:px-5 text-base font-medium text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
               >
                 Let&apos;s Build Together
-                <ArrowRightIcon className="w-5 h-5" />
+                <ArrowRightIcon className="md:w-5 md:h-5 w-0 h-0" />
               </a>
 
               <a
                 href="#"
-                className="gap-2 inline-flex justify-center items-center py-3 px-4 sm:px-5 text-base font-medium  rounded-lg border-2 focus:ring-4  text-white border-gray-400 hover:bg-gray-100/10 focus:ring-gray-300"
+                className=" w-fit justify-center items-center gap-2 inline-flex py-3 px-4 sm:px-5 text-base font-medium  rounded-lg border-2 focus:ring-4  text-white border-gray-400 hover:bg-gray-100/10 focus:ring-gray-300"
               >
                 <Images className="w-5 h-5" />
                 View Our Work
               </a>
             </div>
 
-            {/* Featured logos / stats section */}
-            <div className="px-2 sm:px-4 mx-auto text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-full">
+            {/* stats section */}
+            <div className="px-2 sm:px-4 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-full">
               <div className="bg-white/5 md:backdrop-blur-xs backdrop-blur-sm p-4 sm:p-6 rounded-2xl grid gap-2 border-2 border-white/15">
                 <h1 className="text-3xl sm:text-5xl font-black text-white">
                   500+
