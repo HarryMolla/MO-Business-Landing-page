@@ -1,14 +1,13 @@
 import React from "react";
 
-import { Sparkles } from "./componets/Sparkles"; // Custom Sparkles component for animated spark effects
-import Earth from "./componets/Earth"; // Custom Earth component (probably 3D or animated)
-import { ArrowRightIcon, Images } from "lucide-react"; // Icons from lucide-react
+import { Sparkles } from "./componets/Sparkles"; 
+import Earth from "./componets/Earth"; 
+import { ArrowRightIcon, Images } from "lucide-react";
 
 function index() {
   return (
     <>
-      {/* Main container filling the screen */}
-      <div className="h-screen w-full md:mt-20 mt-10 text-white">
+      <div className="h-fit w-full md:mt-20 mt-10 overflow-x-visible">
         <article className="grid gap-4 text-center relative z-10 pt-10">
           {/* Hero content section */}
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
@@ -46,7 +45,7 @@ function index() {
 
             {/* Featured logos / stats section */}
             <div className="px-2 sm:px-4 mx-auto text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-full">
-              <div className="bg-white/5 backdrop-blur-xs p-4 sm:p-6 rounded-2xl grid gap-2 border-2 border-white/15">
+              <div className="bg-white/5 md:backdrop-blur-xs backdrop-blur-sm p-4 sm:p-6 rounded-2xl grid gap-2 border-2 border-white/15">
                 <h1 className="text-3xl sm:text-5xl font-black text-white">
                   500+
                 </h1>
@@ -54,7 +53,7 @@ function index() {
                   Website Delivery
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-xs p-4 sm:p-6 rounded-2xl grid gap-2 border-2 border-white/15">
+              <div className="bg-white/5 md:backdrop-blur-xs backdrop-blur-sm p-4 sm:p-6 rounded-2xl grid gap-2 border-2 border-white/15">
                 <h1 className="text-3xl sm:text-5xl font-black text-white">
                   500+
                 </h1>
@@ -62,7 +61,7 @@ function index() {
                   Website Delivery
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-xs p-4 sm:p-6 rounded-2xl grid gap-2 border-2 border-white/15">
+              <div className="bg-white/5 md:backdrop-blur-xs backdrop-blur-sm p-4 sm:p-6 rounded-2xl grid gap-2 border-2 border-white/15">
                 <h1 className="text-3xl sm:text-5xl font-black text-white">
                   500+
                 </h1>
@@ -75,8 +74,7 @@ function index() {
 
           {/* Background Earth animation section */}
           <div className="absolute inset-0 -z-10 w-full h-full">
-            <Earth className="w-full h-full" />{" "}
-            {/* Earth component fills entire background container */}
+            <Earth className="w-full h-full" />
             {/* Sparkles and overlay effects */}
             <div
               className="absolute inset-0 h-full w-full overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)] 
@@ -87,8 +85,6 @@ function index() {
                 density={1200}
                 className="absolute inset-0 h-full w-full"
               />
-              {/* Sparkles component overlays the Earth animation */}
-              {/* density=1200 controls number of spark particles */}
             </div>
           </div>
         </article>
@@ -97,9 +93,8 @@ function index() {
         <div className="relative -mt-32 h-80 w-screen overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_bottom_center,#3273ff,transparent_90%)] before:opacity-40 after:absolute after:-left-1/2 after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[10%] after:border-t after:border-[#163474] after:bg-[#08132b]">
           <Sparkles
             density={1200}
-            className="absolute inset-x-0 bottom-0 h-full w-full "
+            className="absolute inset-x-0 bottom-0 h-full w-full"
           />
-          {/* This creates the floating sparkle effect at the bottom, adding depth to the animation */}
         </div>
       </div>
     </>

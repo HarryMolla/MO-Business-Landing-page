@@ -60,8 +60,8 @@ const InfiniteLogos: React.FC = () => {
   }, []);
 
  return (
-  <div className="h-fit py-12"> {/* remove mt-20, use vertical padding */}
-    <div className="text-center space-y-3 px-4 mb-8"> {/* added mb-8 to control spacing */}
+  <div className="h-fit py-0 z-40 md:-mt-15 -mt-15"> 
+    <div className="text-center space-y-3 px-4 mb-8"> 
       <h1 className="text-2xl sm:text-4xl font-bold text-gray-200">
         Trusted by businesses in Ethiopia and beyond
       </h1>
@@ -70,8 +70,8 @@ const InfiniteLogos: React.FC = () => {
       </p>
     </div>
 
-    <section className="relative min-h-[400px] flex items-center px-4 sm:px-6 lg:px-8">
-      <div ref={containerRef} className="flex gap-2 absolute z-10">
+    <section className="relative min-h-[400px] flex items-center px-4 sm:px-6 lg:px-8 md:-mt-20 -mt-35 ">
+      <div ref={containerRef} className="flex md:gap-2 gap-0 absolute z-10">
         {logosDisplay.map((logo, index) => (
           <div
             key={index}
