@@ -11,12 +11,17 @@ import ProjectForm from './ProjectForm'
 import Footer from './Footer'
 import Projects from './Projects'
 import ContactUs from './ContactUs'
+import GlobeSaprk from './GlobeSaprk'
+import InfiniteLogos from './InfinityLogo'
+
 
 const Page = () => {
   return (
     <div className='dark:bg-gray-900 w-full overflow-x-hidden'>
       <Navbar />
       <main className='w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <GlobeSaprk/>
+        <InfiniteLogos/>
         <Hero />
         <WhoWeAre />
         <OurTeam />
