@@ -35,7 +35,7 @@ const OurTeam = () => {
     if (!scrollContainer) return;
 
     let scrollAmount = 0;
-    const speed = 2; 
+    const speed = 2;
 
     const scrollStep = () => {
       if (!scrollContainer) return;
@@ -62,8 +62,10 @@ const OurTeam = () => {
     <section className="w-full px-4 sm:px-6 lg:px-8 md:my-40 my-25">
       <div className="mx-auto grid justify-center my-10">
         <div className="space-y-6 grid justify-center mb-10">
-          <h1 className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
-           bg-gradient-to-r from-gray-300 via-white to-gray-400">
+          <h1
+            className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
+           bg-gradient-to-r from-gray-300 via-white to-gray-400"
+          >
             Meet Our Team
           </h1>
           <p className="text-center text-normal md:text-xl sm:text-lg text-gray-300 ">
@@ -73,16 +75,16 @@ const OurTeam = () => {
 
         <div className="relative w-screen overflow-hidden">
           {/* Gradient Overlay for the Left Edge (to "uncrop" the effect) */}
-          <div
-            className="absolute left-0 top-0 h-full md:w-100 w-20 z-10 pointer-events-none bg-gradient-to-r from-gray-900 to-transparent"
-            
-          ></div>
+          <div className="absolute left-0 top-0 h-full md:w-100 w-20 z-10 pointer-events-none bg-gradient-to-r from-gray-900 to-transparent"></div>
 
-          
           <div
             ref={scrollRef}
             className="flex gap-3 p-2 sm:p-5"
-             style={{ whiteSpace: "nowrap", overflowX: 'scroll', scrollbarWidth: 'none' }}
+            style={{
+              whiteSpace: "nowrap",
+              overflowX: "scroll",
+              scrollbarWidth: "none",
+            }}
           >
             {expertsDisplay.map((expert, index) => (
               <div
@@ -123,9 +125,7 @@ const OurTeam = () => {
           </div>
 
           {/* Gradient Overlay for the Right Edge */}
-          <div
-            className="absolute right-0 top-0 h-full md:w-100 w-20 z-10 pointer-events-none bg-gradient-to-l from-gray-900 to-transparent"
-          ></div>
+          <div className="absolute right-0 top-0 h-full md:w-100 w-20 z-10 pointer-events-none bg-gradient-to-l from-gray-900 to-transparent"></div>
         </div>
       </div>
     </section>

@@ -49,10 +49,12 @@ const CountriesWeServed = () => {
   }, []);
 
   return (
-    <div className="grid justify-center md:my-40 my-5">
+    <div className="grid max-w justify-center md:my-40 my-5">
       <div className="mb-10 grid justify-center space-y-6">
-        <h1 className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
-           bg-gradient-to-r from-gray-300 via-white to-gray-400">
+        <h1
+          className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
+           bg-gradient-to-r from-gray-300 via-white to-gray-400"
+        >
           Countries we served
         </h1>
         <p className="text-center sm:text-lg md:text-xl font-noramal text-gray-300">
@@ -61,15 +63,11 @@ const CountriesWeServed = () => {
       </div>
       <div
         ref={scrollRef}
-        className="flex gap-4 p-5"
-        style={{ overflowX: "hidden", whiteSpace: "nowrap" }}
+        className="relative flex gap-4 p-5 overflow-hidden whitespace-nowrap"
       >
         {expertsDisplay.map((expert, index) => (
-          <div className="grid gap-2 " key={index}>
-            <div
-              key={index}
-              className="flex flex-col items-center w-45 h-30 bg-gray-100/2 p-4 rounded-lg flex-shrink-0 overflow-hidden"
-            >
+          <div className="grid gap-2" key={index}>
+            <div className="flex flex-col items-center w-45 h-30 bg-gray-100/2 p-4 rounded-lg flex-shrink-0 overflow-hidden">
               <ReactCountryFlag
                 countryCode={expert.code}
                 svg

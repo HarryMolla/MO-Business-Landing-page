@@ -1,4 +1,5 @@
-'use client';
+"use client";
+import {ChevronDown } from "lucide-react";
 import React, { useState, ChangeEvent, FormEvent } from "react";
 
 interface FormData {
@@ -33,21 +34,24 @@ const ProjectForm: React.FC = () => {
   };
 
   return (
-    <section className="py-12 bg-gray-900 min-h-screen w-full">
-      <div className="container mx-auto px-4 w-full">
+    <section className="py-12 min-h-screen ">
+      <div className="container mx-0 px-0 w-full">
         <form
           onSubmit={handleSubmit}
-          className="max-w-4xl mx-auto bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700"
+          className="max-w-full mx-auto bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700"
         >
           <div className="p-5 grid justify-center gap-4 text-center mb-10">
-        <h1 className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
-           bg-gradient-to-r from-gray-300 via-white to-gray-400">
-          Let&apos;s Talk Business
-        </h1>
-        <p className="text-normal md:text-xl sm:text-lg text-gray-300">
-          Ready to transform your ideas into reality? Get in touch with our team today.
-        </p>
-      </div>
+            <h1
+              className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
+           bg-gradient-to-r from-gray-300 via-white to-gray-400"
+            >
+              Let&apos;s Talk Business
+            </h1>
+            <p className="text-normal md:text-xl sm:text-lg text-gray-300">
+              Ready to transform your ideas into reality? Get in touch with our
+              team today.
+            </p>
+          </div>
 
           {/* Row 1: Full Name | Email */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -142,7 +146,9 @@ const FormField: React.FC<InputProps> = ({
   type = "text",
 }) => (
   <div>
-    <label className="block text-sm font-medium text-gray-300 mb-2">{label}</label>
+    <label className="block text-sm font-medium text-gray-300 mb-2">
+      {label}
+    </label>
     <input
       type={type}
       name={name}
@@ -170,22 +176,32 @@ const FormSelect: React.FC<SelectProps> = ({
   options,
 }) => (
   <div>
-    <label className="block text-sm font-medium text-gray-300 mb-2">{label}</label>
-    <select
-      name={name}
-      value={value}
-      onChange={onChange}
-      className="w-full bg-gray-700 text-gray-100 rounded-lg border border-gray-600 px-4 py-3 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-400 transition-all duration-200"
-    >
-      <option value="" disabled>
-        Select {label}
-      </option>
-      {options.map((opt, idx) => (
-        <option key={idx} value={opt}>
-          {opt}
+    <label className="block text-sm font-medium text-gray-300 mb-2">
+      {label}
+    </label>
+
+    <div className="relative">
+      <select
+        name={name}
+        value={value}
+        onChange={onChange}
+        className="w-full appearance-none bg-gray-700 text-gray-100 rounded-lg border border-gray-600 px-4 pr-10 py-3
+                 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-400 transition-all duration-200"
+      >
+        <option value="" disabled>
+          Select {label}
         </option>
-      ))}
-    </select>
+        {options.map((opt, idx) => (
+          <option key={idx} value={opt}>
+            {opt}
+          </option>
+        ))}
+      </select>
+
+      <span className="absolute inset-y-0 right-3 flex items-center pointer-events-none text-gray-400">
+        <ChevronDown/>
+      </span>
+    </div>
   </div>
 );
 
@@ -205,7 +221,9 @@ const FormTextArea: React.FC<TextAreaProps> = ({
   onChange,
 }) => (
   <div className="mb-6">
-    <label className="block text-sm font-medium text-gray-300 mb-2">{label}</label>
+    <label className="block text-sm font-medium text-gray-300 mb-2">
+      {label}
+    </label>
     <textarea
       name={name}
       placeholder={placeholder}
