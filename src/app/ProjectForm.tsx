@@ -34,7 +34,7 @@ const ProjectForm: React.FC = () => {
   };
 
   return (
-    <section className="py-12 min-h-screen ">
+    <section className="md:py-0 py-0 min-h-screen ">
       <div className="container mx-0 px-0 w-full">
         <form
           onSubmit={handleSubmit}

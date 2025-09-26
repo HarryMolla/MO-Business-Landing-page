@@ -49,7 +49,7 @@ const CountriesWeServed = () => {
   }, []);
 
   return (
-    <div className="grid max-w justify-center md:my-40 my-5">
+    <div className="grid md:w-fit items-center md:my-40 my-5">
       <div className="mb-10 grid justify-center space-y-6">
         <h1
           className="text-2xl sm:text-4xl font-bold text-center text-transparent bg-clip-text 
